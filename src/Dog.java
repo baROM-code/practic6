@@ -8,7 +8,7 @@ public class Dog extends Animal
     @Override
     public void run(int distance)
     {
-        if (distance <= 200) super.run(distance);
+        if (distance <= 500) super.run(distance);
     }
 
     @Override
