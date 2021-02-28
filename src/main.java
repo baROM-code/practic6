@@ -14,6 +14,8 @@ public class main
         dog2.info();
         dog2.swim(7);
 
-        System.out.println("Всего животных: " + Animal.countAnimal);
+        // System.out.println("Всего животных: " + Animal.countAnimal);
+        Animal[] Animals = {cat1, cat2, dog1, dog2};
+        System.out.println("Всего животных: " + Animals.length);
     }
 }
