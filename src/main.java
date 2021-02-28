@@ -16,6 +16,13 @@ public class main
 
         // System.out.println("Всего животных: " + Animal.countAnimal);
         Animal[] Animals = {cat1, cat2, dog1, dog2};
-        System.out.println("Всего животных: " + Animals.length);
+        int countCats = 0;
+        int countDogs = 0;
+        for (int i = 0; i < Animals.length; i++)
+        {
+            if (Animals[i] instanceof Cat) countCats++;
+            if (Animals[i] instanceof Dog) countDogs++;
+        }
+        System.out.println("Всего животных: " + Animals.length + ". Из них Кошек:" + countCats + ", Собак:" + countDogs);
     }
 }
